@@ -49,7 +49,7 @@ export default function Products({
           </ProductPrateleira>
           <ProductFooter>
             <ProductStatus onPress={() => onChangeStatus(product.id)}>
-              <ProductIcon source={product.quantbase >= product.quantbase  ? done : peding} />
+              <ProductIcon source={product.quantidade >= product.quantbase  ? done : peding} />
               <Text
                 style={{
                   color:
@@ -58,7 +58,7 @@ export default function Products({
                       : "#ebdb2bff",
                 }}
               >
-                {product.done ? "Quantidade padrão" : "Reabastecer"}
+                {product.quantidade >= product.quantbase ? "Quantidade padrão" : "Reabastecer"}
               </Text>
             </ProductStatus>
             <ProductActions>

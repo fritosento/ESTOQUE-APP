@@ -32,7 +32,7 @@ export const products = [
 
   {
     id: 4,
-    title: "Leite em pó LaSerenissima",
+    title: "Leite em pó - LaSerenissima",
     produto: leite,
     quantidade: 23,
     quantbase: 25,

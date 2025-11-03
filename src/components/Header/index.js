@@ -10,7 +10,7 @@ export default function Header(){
      </Text>
      </Text>
      
-     <Text opacity={0.5}>Visualize os produtos a venda</Text>
+     <Text opacity={0.5}>Visualize os produtos a venda!</Text>
 
 
      </Container>

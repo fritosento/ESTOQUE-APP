@@ -15,7 +15,7 @@ import {
 import remove from "../../assets/images/delete.png";
 import done from "../../assets/images/done.png";
 import edit from "../../assets/images/edit.png";
-import peding from "../../assets/images/image.png";
+import alert from "../../assets/images/alert.png";
 
 export default function Products({
   products,
@@ -49,7 +49,7 @@ export default function Products({
           </ProductPrateleira>
           <ProductFooter>
             <ProductStatus onPress={() => onChangeStatus(product.id)}>
-              <ProductIcon source={product.quantidade >= product.quantbase  ? done : peding} />
+              <ProductIcon source={product.quantidade >= product.quantbase  ? done : alert} />
               <Text
                 style={{
                   color:

@@ -7,5 +7,6 @@ export const Container = styled.SafeAreaView`
 flex:1;
   margin-top: ${isAndroid ? `${StatusBar.currentHeight}px` : 0};
     padding-bottom: ${isAndroid ? "40px" : "0px"};
+    
     background-color:#fff ;
 `;

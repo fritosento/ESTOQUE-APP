@@ -16,7 +16,7 @@ margin-bottom:8px;
    align-items:center;
    justify-content:center;`
 export const ProductPrateleira = styled.View`
-margin-bottom:18px;`;
+`;
 export const ProductFooter = styled.View`
   flex-direction: row;
   align-items: center;

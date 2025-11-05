@@ -6,15 +6,16 @@ export default function PForm({ onSave }) {
   return (
     <Form>
       <Input
-        placeholder="Título"
+        placeholder="Produto"
       />
 
       <Input
-        placeholder="Descrição"
+        placeholder="Quantidade atual"
       />
+      <Input placeholder="Quantidade miníma para o estoque" />
 
       <Buttom onPress={onSave} disabled={false}>
-        Cadastrar
+        Adcionar
       </Buttom>
     </Form>
   );

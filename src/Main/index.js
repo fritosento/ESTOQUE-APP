@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Container } from "./styled";
 import Header from "../components/Header";
 import Products from "../components/Products";
-import AddProduct from "../AddProduct";
+import AddProduct from "../components/AddProduct";
 import DeleteConfirmModal from "../components/DeleteConfirmModal";
 import NewModal from "../components/NewModal";
 
@@ -30,7 +30,7 @@ export default function Main() {
   }
 
   function handleCreateProduct(product) {
-    alert(`{ title: ${product.title}, Em prateleita: ${product.quantidade} }`);
+    alert(`{ titulo: ${product.title}, Em prateleita: ${product.quantidade}, Quantidade miníma: ${product.quantbase}  }`);
   }
   return (
     <Container>

@@ -16,7 +16,7 @@ export default function NewModal({ visible, onClose, onSave }) {
       <Header>
         <Text weight="600">Adicionar Tarefa</Text>
 
-        <TouchableOpacity onPress={onClose}>
+        <TouchableOpacity onPress={onClose} padding="6px">
           <Image source={close} />
         </TouchableOpacity>
       </Header>

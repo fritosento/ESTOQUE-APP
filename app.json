@@ -2,6 +2,7 @@
   "expo": {
     "name": "estoque-app",
     "slug": "estoque-app",
+    "platforms": ["ios", "android", "web"],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -23,10 +24,24 @@
       "edgeToEdgeEnabled": true
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+  "bundler": "metro",
+  "output": "single"
     },
     "plugins": [
       "expo-font"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "abd1fa67-3cd3-4a49-8f12-5af96a1128da"
+      }
+    },
+    "owner": "fritose",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/abd1fa67-3cd3-4a49-8f12-5af96a1128da"
+    }
   }
 }

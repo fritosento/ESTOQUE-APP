@@ -45,7 +45,6 @@ export default function Products({
           </ProductEmbalagem>
           <ProductPrateleira>
             <Text>Disponível: {product.quantidade}</Text>
-            <Text>{product.prateleira}</Text>
           </ProductPrateleira>
           <ProductFooter>
             <ProductStatus onPress={() => onChangeStatus(product.id)}>

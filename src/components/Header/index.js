@@ -4,13 +4,16 @@ export default function Header(){
     return(
      <Container>
 
-     <Text size={24} >
-     Estoque<Text color='blue' size={24}>
-     App
+     <Text color="orange" size={24} >
+     Balcão- 
+     
+     <Text size="20">ao</Text>
+     <Text color='blue' size={24}>
+     -App
      </Text>
      </Text>
      
-     <Text opacity={0.5}>Visualize os produtos a venda!</Text>
+     <Text size="14" opacity={0.5}>Transformação Digital em Mercearias Locais</Text>
 
 
      </Container>

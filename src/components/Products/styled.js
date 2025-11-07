@@ -1,9 +1,9 @@
 import styled from "styled-components/native";
 export const Product = styled.View`
   margin: 20px auto 12px;
-  border-width: 3px;
+  border-width: 2px;
   border-radius: 12px;
-  border-color: #b9aeaef8;
+  border-color: #b9aeae72;
   padding: 16px;
   width: 320px;
   background-color: #fff;

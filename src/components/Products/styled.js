@@ -22,7 +22,7 @@ export const ProductFooter = styled.View`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  
+  margin-top:10px;
   
 `;
 export const ProductIcon = styled.Image`

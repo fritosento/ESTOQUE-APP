@@ -6,7 +6,10 @@ const isAndroid = Platform.OS === 'android';
 export const Container = styled.SafeAreaView`
 flex:1;
   margin-top: ${isAndroid ? `${StatusBar.currentHeight}px` : 0};
-   
-    
     background-color:#fff ;
+`;
+export const CenteredContainer = styled.View`
+  margin-top: 32px;
+  justify-content: center;
+  align-items: center;
 `;

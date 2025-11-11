@@ -8,8 +8,8 @@ export const products = [
     id: 1,
     title: "CUZCUZ - Flocão Nordestino",
     produto: cuzcuz,
-    quantidade: 15,
-    quantbase: 20,
+    quantidade: Number(15),
+    quantbase: Number(20),
  
   },
 

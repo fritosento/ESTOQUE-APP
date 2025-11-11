@@ -12,7 +12,7 @@ export default function PForm({ onSave, buttomLabel, product }) {
   return (
     <Form>
       <Input
-        placeholder="Producto"
+        placeholder="Produto"
         value={title}
         onChangeText={setTitle}
       />

@@ -23,7 +23,11 @@ export default function PForm({ onSave, buttomLabel, product }) {
         onChangeText={setQuantidade}
       />
 
-      <Buttom onPress={() => onSave({ id, title, quantidade })} disabled={title.length === 0 || quantidade.length === 0}>
+      <Buttom 
+    
+       onPress={() => onSave({ id, title, quantidade })} disabled={title.length === 0 || quantidade.length === 0}
+       >
+        Adcionar
         {buttomLabel}
       </Buttom>
     </Form>

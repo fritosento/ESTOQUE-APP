@@ -14,6 +14,7 @@ import productEmpity from "../assets/images/seminf.png";
 import { Text } from '../components/Text';
 import { products } from "../mocks/Products"
 
+
 export default function Main() {
   const [prod, setProd] = useState([]);
   const [isDeleteModalVisible, setIsDeleteModalVisible] = useState(false);
@@ -22,6 +23,7 @@ export default function Main() {
   const [BeingEdited, setBeingEdited] = useState(null);
   const [IdBeingDeleted, setIdBeingDeleted] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
+
 
    useEffect(() => {
     setProd(products);

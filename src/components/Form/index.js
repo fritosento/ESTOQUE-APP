@@ -44,6 +44,7 @@ export default function PForm({ onSave, buttomLabel, product }) {
           <Image
             source={{ uri: image }}
             style={{ width: '100%', height: '100%', borderRadius: 10 }}
+              resizeMode="cover"
           />
         ) : (
           <Text>{image ? 'Alterar Embalagem' : 'Adcionar Embalagem'}</Text>

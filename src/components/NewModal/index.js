@@ -14,7 +14,7 @@ export default function NewModal({ visible, onClose, onSave }) {
   return (
     <Modal visible={visible} onClose={onClose}>
       <Header>
-        <Text weight="600">Adicionar Tarefa</Text>
+        <Text weight="600">Adicionar produto</Text>
 
         <TouchableOpacity onPress={onClose} padding="6px">
           <Image source={close} />

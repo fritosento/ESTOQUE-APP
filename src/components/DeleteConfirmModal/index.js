@@ -16,7 +16,7 @@ export default function DeleteConfirmModal({ onClose, onConfirm, visible }) {
         size={18}
         weight="600"
       >
-        Tem certeza que deseja remover a tarefa?
+        Tem certeza que deseja remover o produto?
       </Text>
       <Text
         opacity={0.5}

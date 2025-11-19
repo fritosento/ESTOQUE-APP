@@ -44,7 +44,7 @@ export default function Main() {
   }
 
   function handleConfirmDeleteProduct() {
-    alert(`Excluir a tarefa de id ${IdBeingDeleted}`);
+    alert(`Excluir a produto de id ${IdBeingDeleted}`);
   }
 
   function handleCreateProduct(products) {

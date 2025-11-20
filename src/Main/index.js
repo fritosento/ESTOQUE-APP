@@ -14,7 +14,6 @@ import productEmpity from "../assets/images/seminf.png";
 import { Text } from '../components/Text';
 import { products } from "../mocks/Products"
 
-
 export default function Main() {
   const [prod, setProd] = useState([]);
   const [isDeleteModalVisible, setIsDeleteModalVisible] = useState(false);
@@ -23,7 +22,6 @@ export default function Main() {
   const [BeingEdited, setBeingEdited] = useState(null);
   const [IdBeingDeleted, setIdBeingDeleted] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-
 
    useEffect(() => {
     setProd(products);
@@ -44,13 +42,47 @@ export default function Main() {
   }
 
   function handleConfirmDeleteProduct() {
-    alert(`Excluir a produto de id ${IdBeingDeleted}`);
-  }
+  setProd((produtosAtuais) =>
+    produtosAtuais.filter((p) => p.id !== IdBeingDeleted)
+  );
 
-  function handleCreateProduct(products) {
-    alert(`{ title: ${products.title}, description: ${products.quantidade} }`);
-    setIsNewProductVisible(false);
-  }
+  setIsDeleteModalVisible(false);
+  setIdBeingDeleted(null);
+}
+
+
+  function handleCreateProduct(novoProduto) {
+  setProd((produtosAtuais) => {
+    const produtoExistente = produtosAtuais.find(
+      (p) => p.title.toLowerCase() === novoProduto.title.toLowerCase()
+    );
+
+    // Se já existe → soma a quantidade
+    if (produtoExistente) {
+      return produtosAtuais.map((p) =>
+        p.title.toLowerCase() === novoProduto.title.toLowerCase()
+          ? { 
+              ...p, 
+              quantidade: Number(p.quantidade) + Number(novoProduto.quantidade) 
+            }
+          : p
+      );
+    }
+
+    // Se não existe → cria novo produto
+    return [
+      ...produtosAtuais,
+      {
+        id: Date.now().toString(),
+        title: novoProduto.title,
+        quantidade: Number(novoProduto.quantidade),
+      },
+    ];
+  });
+
+  setIsNewProductVisible(false);
+}
+
 
   function handleUpdateProduct(products) {
     alert(
